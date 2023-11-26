@@ -1,0 +1,165 @@
+.dv-ipes-air-pollution {
+    height: 304px;
+    color: var(--dv-color-text-primary);
+
+    .enterprise-statistics {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+
+        // padding: 16px 0 14px 16px;
+        margin: 12px 0;
+
+        .statistics-charts {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            width: 88px;
+            height: 44px;
+
+            .img2 {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: 76.86px !important;
+                animation: radioLineAnimation 0.9s linear 0.2s infinite alternate;
+            }
+
+            .img1 {
+                position: absolute;
+                top: 6px;
+                left: 0;
+                width: 88px !important;
+                animation: radioLineAnimation 0.9s linear 0.2s infinite alternate;
+            }
+        }
+
+        .statistics-list {
+            width: 120px;
+            height: 100%;
+            margin-left: 40px;
+            font-size: 12px;
+
+            .row {
+                .label {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                .value {
+                    font-family: var(--dv-font-family-number);
+                    font-size: 14px;
+                    font-weight: normal;
+
+                    .num {
+                        margin-right: 4px;
+                        color: #00deff;
+                    }
+
+                    .unit {
+                        color: #a6a9ad;
+                    }
+                }
+            }
+        }
+    }
+
+    .discharge-total {
+        box-sizing: border-box;
+        height: 212px;
+        padding: 12px;
+        background: var(--dv-color-fill-base);
+        border: 1px solid var(--dv-color-border-base);
+        border-radius: 4px;
+
+        .discharge-title {
+            height: 14px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+
+            .unit {
+                color: var(--dv-color-text-secondary);
+            }
+        }
+
+        .discharge-label {
+            height: 14px;
+            font-size: var(--dv-text-headline2);
+            font-weight: 500;
+            color: var(--dv-color-text-secondary);
+        }
+
+        .box {
+            height: calc(100% - 44px);
+
+            .chart-statistics {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                height: calc(100% / 3);
+
+                .chart-statistics-head {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: var(--dv-text-body1);
+                    font-weight: normal;
+                    line-height: 14px;
+                    letter-spacing: 0;
+
+                    .statistics-head-name {
+                        max-width: 85px;
+                        overflow: hidden;
+                        font-family: var(--font-family-text);
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    .statistics-head-number {
+                        overflow: hidden;
+                        font-family: var(--font-family-number);
+                        font-size: var(--dv-text-number3);
+                        color: var(--dv-color-index);
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+
+                        .statistics-head-number-left {
+                            color: var(--dv-color-success);
+                        }
+
+                        .separator {
+                            color: var(--dv-color-text-placeholder);
+                        }
+                    }
+                }
+
+                .chart-statistics-body {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 8px;
+
+                    .chart-statistics-body-box {
+                        display: flex;
+                        width: 100%;
+                        height: 8px;
+                        overflow: hidden;
+                        border-radius: 8px;
+
+                        .statistics-body-left {
+                            height: 8px;
+                            background-color: #ffd902;
+                        }
+
+                        .statistics-body-right {
+                            height: 8px;
+                            background: var(--dv-color-fill-lighter);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

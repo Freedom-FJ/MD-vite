@@ -1,0 +1,40 @@
+.dv-wgms-lake-river-index {
+    width: $bg-width;
+    color: white;
+
+    @include common-font;
+
+    .dv-wgms-lake-river-item {
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 16px;
+        font-size: var(--dv-text-body1);
+        border-radius: 4px;
+
+        .dv-wgms-lake-level-box {
+            width: 44px;
+            height: 22px;
+            margin-right: 6px;
+            line-height: 22px;
+            text-align: center;
+            background: #03a9f4;
+            border-radius: 21px;
+        }
+    }
+
+    .dv-wgms-lake-river-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .dv-wgms-text-14 {
+        font-size: var(--dv-text-body1);
+        font-weight: normal;
+    }
+
+    .dv-wgms-river-detail {
+        min-height: 74px;
+        padding: 12px;
+
+        @include common-bg;
+    }
+}

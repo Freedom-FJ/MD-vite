@@ -1,0 +1,88 @@
+.dv-ipes-top-action {
+    margin-bottom: 16px;
+    font-size: 16px;
+
+    span {
+        color: var(--dv-color-text-primary);
+
+        span {
+            color: var(--dv-text-headline2);
+        }
+    }
+}
+
+.dv-ipes-middle-action {
+    width: 100%;
+    height: 10px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    border-radius: 5px;
+
+    .dv-ipes-rate {
+        width: 25%;
+        height: 10px;
+        background: rgba($color: #fff, $alpha: 0.6);
+    }
+}
+
+.dv-ipes-alarm-statistics {
+    .dv-ipes-dangerous {
+        background: var(--dv-color-danger);
+    }
+
+    .dv-ipes-warn {
+        background: #ff792e;
+    }
+
+    .dv-ipes-attention {
+        background: #ffb443;
+    }
+
+    .dv-ipes-abnormal {
+        background: #a162f7;
+    }
+
+    .dv-ipes-dangerous-text {
+        color: var(--dv-color-danger);
+    }
+
+    .dv-ipes-warn-text {
+        color: #ff792e;
+    }
+
+    .dv-ipes-attention-text {
+        color: #ffb443;
+    }
+
+    .dv-ipes-abnormal-text {
+        color: #a162f7;
+    }
+}
+
+.dv-ipes-labels {
+    color: var(--dv-color-text-secondary);
+
+    span:not(:last-child)::after {
+        margin: 0 2px;
+        color: rgba(255, 255, 255, 0.6);
+        content: "/";
+    }
+}
+
+.dv-ipes-num {
+    color: var(--dv-color-index);
+}
+
+.dv-ipes-nums {
+    span:not(:last-child)::after {
+        margin: 0 2px;
+        color: rgba(255, 255, 255, 0.7);
+        content: "/";
+    }
+}
+
+.dv-ipes-flex-bw-c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

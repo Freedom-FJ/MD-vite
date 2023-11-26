@@ -1,0 +1,101 @@
+.taskDispose {
+    .title-large {
+        color: var(--dv-color-text-primary);
+    }
+
+    .common-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        font-size: 16px;
+        color: #909399;
+
+        .title-time {
+            font-family: var(--dv-font-family-number);
+            color: var(--dv-color-text-secondary);
+        }
+    }
+
+    .statistics-box {
+        padding: 12px;
+        background-color: rgba(68, 136, 208, 0.2);
+        border: 1px solid rgba(68, 136, 208, 0.2);
+        border-radius: 4px;
+
+        .statistics-item {
+            .category {
+                margin-bottom: 8px;
+                font-size: 14px;
+                color: var(--dv-color-text-primary);
+            }
+
+            .legend-box {
+                display: flex;
+                margin-top: 9px;
+
+                .legend-item {
+                    display: flex;
+                    align-items: baseline;
+                    margin-right: 16px;
+
+                    .legend-item-color {
+                        width: 10px;
+                        height: 10px;
+                    }
+
+                    .legend-item-name {
+                        margin: 0 4px;
+                        font-size: 14px;
+                        color: var(--dv-color-text-primary);
+                    }
+
+                    .legend-item-value {
+                        font-family: var(--dv-font-family-number);
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .statistics-item:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    .duty-name {
+        margin: 16px 0 8px;
+
+        .duty-title {
+            font-size: 16px;
+            color: var(--dv-color-text-primary);
+        }
+    }
+
+    .table-box {
+        display: flex;
+        flex-wrap: wrap;
+
+        .dutyRosterItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 56px;
+            margin: 0 8px 8px 0;
+            font-size: 14px;
+            background-color: rgba(68, 136, 208, 0.2);
+            border: 1px solid rgba(68, 136, 208, 0.2);
+            border-radius: 4px;
+
+            .duty {
+                color: var(--dv-color-text-primary);
+            }
+
+            .name {
+                margin-top: 6px;
+                color: var(--dv-color-index);
+            }
+        }
+    }
+}

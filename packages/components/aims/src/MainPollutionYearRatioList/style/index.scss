@@ -1,0 +1,63 @@
+.dv-aims-main-pollution-year-ratio-list {
+    &-list-wrap {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    &-list-item {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        height: 32px;
+        padding: 9px 0;
+        font-size: 14px;
+        line-height: 14px;
+        color: var(--dv-color-text-primary);
+
+        .progress-box {
+            display: flex;
+            flex: 1;
+            align-items: center;
+
+            .name {
+                width: 56px;
+                margin-right: 8px;
+                overflow: hidden;
+                text-align: right;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .bar {
+                position: relative;
+                flex: 1;
+                height: 8px;
+                background: var(--dv-color-fill-base);
+            }
+
+            .progress-bar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+
+                &::after {
+                    position: absolute;
+                    top: -2px;
+                    right: -2px;
+                    width: 2px;
+                    height: 12px;
+                    content: " ";
+                    background: inherit;
+                }
+            }
+        }
+
+        .value {
+            width: 64px;
+            font-family: var(--dv-font-family-number);
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.dv-wgms-key-river {
+    width: $bg-width;
+    height: 138px;
+
+    @include common-font;
+
+    &-one {
+        flex-direction: column;
+
+        &-content {
+            position: relative;
+            margin: 4px 0;
+
+            &-text {
+                position: absolute;
+                top: 40%;
+                width: 100%;
+                font-size: 16px;
+                font-weight: 500;
+                color: var(--dv-color-text-placeholder);
+                text-align: center;
+                text-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+
+                img {
+                    width: 80px;
+                }
+            }
+        }
+
+        &-compare {
+            span {
+                margin-right: 4px;
+                color: var(--dv-color-text-secondary);
+            }
+        }
+    }
+}

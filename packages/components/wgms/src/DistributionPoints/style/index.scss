@@ -1,0 +1,55 @@
+.dv-wgms-distribution-points {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: $bg-width;
+    height: 181.37px;
+    color: var(--dv-color-text-primary);
+
+    @include common-font;
+
+    .dv-wgms-distribution-items {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dv-wgms-distribution-font-box {
+        display: flex;
+        justify-content: center;
+        width: 86.74px;
+        height: 84px;
+
+        // padding-top: 21px;
+        background-image: url(./images/distribution-back-light.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .dv-wgms-distribution-font-blue {
+        font-family: var(--dv-font-family-number);
+        font-size: var(--dv-text-number7);
+        font-weight: normal;
+        line-height: 60px;
+        color: var(--dv-color-index);
+        text-align: center;
+    }
+
+    .dv-wgms-distribution-name {
+        margin-top: 8px;
+        font-size: var(--dv-text-body1);
+        font-weight: normal;
+        line-height: var(--dv-text-body1);
+        color: var(--dv-color-text-primary);
+        text-align: center;
+    }
+}
+
+.dark {
+    .dv-wgms-distribution-font-box {
+        background-image: url(./images/distribution-back.png);
+    }
+}

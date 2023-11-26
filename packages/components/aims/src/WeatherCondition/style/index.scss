@@ -1,0 +1,47 @@
+.dv-aims-weather-condition-container {
+    display: flex;
+    flex-direction: row;
+
+    .dv-aims-weather-condition-list {
+        position: relative;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        max-width: 63px;
+
+        img {
+            width: 40px;
+            height: 40px;
+
+            &.white {
+                width: 32px;
+                height: 32px;
+                margin-top: 8px;
+            }
+        }
+
+        .condition {
+            font-size: 14px;
+            line-height: 14px;
+            color: var(--dv-color-text-primary);
+        }
+
+        .condition-value {
+            position: absolute;
+            top: 24px;
+            z-index: 10;
+            font-family: var(--dv-font-family-number);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 20px;
+            color: var(--dv-color-index);
+        }
+
+        .unit {
+            font-size: 12px;
+            line-height: 12px;
+            color: var(--dv-color-text-secondary);
+        }
+    }
+}

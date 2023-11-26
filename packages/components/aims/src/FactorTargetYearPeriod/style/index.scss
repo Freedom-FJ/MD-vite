@@ -1,0 +1,71 @@
+.dv-aims-factor-target-year-period {
+    &-container {
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rollingContainer {
+            overflow-x: auto;
+        }
+
+        .list {
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 1000px;
+            margin-top: 12px;
+
+            .item {
+                flex-direction: column;
+                align-items: flex-start;
+                font-size: 12px;
+                color: var(--dv-color-text-primary);
+
+                .name {
+                    margin-right: 4px;
+                    opacity: 0.5;
+                }
+
+                .unit {
+                    margin-left: 4px;
+                    font-family: var(--dv-font-family-number);
+                    font-size: 12px;
+                    opacity: 0.5;
+                }
+
+                .factorName {
+                    margin-bottom: 8px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                .factorValue {
+                    margin-bottom: 8px;
+                    font-family: var(--dv-font-family-number);
+                    font-size: 24px;
+                }
+
+                .target {
+                    margin-bottom: 8px;
+                    font-family: var(--dv-font-family-number);
+                }
+
+                .period {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        height: 10px;
+                        margin-left: 2px;
+                        vertical-align: middle;
+                    }
+
+                    .value {
+                        font-family: var(--dv-font-family-number);
+                    }
+                }
+            }
+        }
+    }
+}

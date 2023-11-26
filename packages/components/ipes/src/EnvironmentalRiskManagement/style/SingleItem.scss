@@ -1,0 +1,18 @@
+.dv-ipes-single-item {
+    box-sizing: border-box;
+    height: 28px;
+    padding: 0 8px;
+    background-color: rgba(2, 176, 253, 0.1);
+    border: 1px solid rgba(0, 147, 255, 0.1);
+    border-radius: 4px;
+
+    .num {
+        color: #03d5fb;
+    }
+}
+
+.dv-ipes-flex-bw-c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

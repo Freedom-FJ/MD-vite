@@ -1,0 +1,22 @@
+{
+  "name": "@data-visual/wgms",
+  "version": "1.2.15",
+  "description": "",
+  "main": "./index.ts",
+  "scripts": {
+    "build:types": "vue-tsc -p tsconfig.declaration.json",
+    "test": "vitest",
+    "build": "vite build",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.29.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "e62ed8cf772b40265a4bea5819481ba226c0023a"
+}

@@ -1,0 +1,22 @@
+{
+    "name": "@data-visual/play",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "vite"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+    },
+    "dependencies": {
+      "@data-visual/wgms": "workspace:^1.0.0",
+      "@data-visual/aims": "workspace:^1.0.0",
+      "@data-visual/bmp": "workspace:^1.0.0",
+      "@data-visual/ipes": "workspace:^1.0.0",
+      "@ued_fpi/data-visual": "workspace:^1.0.9"
+    }
+  }
+  

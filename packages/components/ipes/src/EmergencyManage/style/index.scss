@@ -1,0 +1,43 @@
+.emergencyManage {
+    position: relative;
+    width: 376px !important;
+    height: 128px !important;
+
+    // .total {
+    //     position: absolute;
+    //     top: 40%;
+    //     left: 17%;
+    //     z-index: 2;
+    //     font-family: var(--dv-color-text-primary);
+    //     font-size: 24px;
+    //     font-weight: 700;
+    //     color: var(--dv-color-text-primary);
+    // }
+    .echartsBox {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .chartBg {
+        position: absolute;
+        top: 13%;
+        left: 6%;
+        z-index: 1;
+        width: 104px;
+        height: 104px;
+        background: var(--image-chartBg) center center no-repeat;
+        background-size: 104px 104px;
+    }
+}
+
+.light {
+    .emergencyManage {
+        --image-chartBg: url("./img/pie-light.png");
+    }
+}
+
+.dark {
+    .emergencyManage {
+        --image-chartBg: url("./img/pie-dark.png");
+    }
+}

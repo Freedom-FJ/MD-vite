@@ -1,0 +1,132 @@
+.dv-aims-air-quality-realtime-and-day {
+    &-container {
+        padding: 12px;
+        background-image: url(./images/bg.png);
+        background-repeat: no-repeat;
+        background-position: 100px 8px;
+        background-size: 182px 68px;
+    }
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    &-top-item {
+        .title {
+            margin-bottom: 6px;
+            font-size: var(--dv-text-body1);
+            font-weight: normal;
+            line-height: var(--dv-text-body1);
+            color: var(--dv-color-text-secondary);
+        }
+
+        .aqi-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .aqiValue {
+                margin-right: 12px;
+                font-family: var(--dv-font-family-number);
+                font-size: 40px;
+                font-weight: 500;
+                line-height: 40px;
+            }
+
+            .aqiInfo {
+                .pollution-zh {
+                    font-size: var(--dv-text-body1);
+                    line-height: var(--dv-text-body1);
+                }
+
+                .main {
+                    display: flex;
+                    align-items: center;
+
+                    .text {
+                        margin-right: 6px;
+                        font-size: var(--dv-text-body1);
+                        line-height: var(--dv-text-body1);
+                        color: var(--dv-color-text-secondary);
+                    }
+
+                    .value {
+                        font-family: var(--dv-font-family-number);
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    &-center {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        font-size: var(--dv-text-body1);
+        font-weight: normal;
+        line-height: var(--dv-text-body1);
+        color: var(--dv-color-text-secondary);
+
+        >span:first-child {
+            color: var(--dv-color-text-primary);
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        padding: 0;
+
+        .bottom-left-title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding-top: 30px;
+            font-size: var(--dv-text-body1);
+            color: var(--dv-color-text-secondary);
+
+            span {
+                display: block;
+                height: 26px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    &-bottom-item {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .value {
+            margin-bottom: 6px;
+            font-family: var(--dv-font-family-number);
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 18px;
+        }
+
+        .line {
+            width: 22px;
+            height: 2px;
+            margin-bottom: 4px;
+            border-radius: 100px;
+        }
+
+        .name {
+            margin-bottom: 12px;
+            font-family: var(--dv-font-family-number);
+            font-size: var(--dv-text-number3);
+            font-weight: 500;
+            line-height: 16px;
+            color: var(--dv-color-text-primary);
+        }
+    }
+}

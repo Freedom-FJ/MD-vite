@@ -1,0 +1,15 @@
+.dv-wgms-station-water-quality-statistics {
+    width: $bg-width;
+    height: 192px;
+
+    .tab-item {
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        font-size: var(--dv-text-number2);
+        line-height: 20px;
+        color: var(--dv-color-text-primary);
+        text-align: center;
+        border-radius: 16px;
+    }
+}

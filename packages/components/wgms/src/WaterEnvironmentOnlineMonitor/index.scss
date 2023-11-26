@@ -1,0 +1,35 @@
+.dv-wgms-env-online {
+    flex-wrap: wrap;
+    width: $bg-width;
+    padding: 12px 12px 1px;
+
+    @include common-font;
+    @include common-bg;
+
+    .dv-wgms-item-one {
+        width: 45.5%;
+        margin-bottom: 11px;
+
+        .dv-wgms-name {
+            color: var(--dv-color-text-primary);
+        }
+
+        .dv-wgms-value {
+            font-family: var(--dv-font-family-number);
+            font-size: var(--dv-text-number1);
+
+            .dv-wgms-online {
+                color: var(--dv-color-index);
+            }
+
+            .dv-wgms-split {
+                margin: 0 2px;
+                color: var(--dv-color-text-placeholder);
+            }
+
+            .dv-wgms-total {
+                color: var(--dv-color-text-primary);
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.dv-ipes-air-quality {
+    .year-air-quality {
+        display: flex;
+        height: 92px;
+        padding: 12px 0;
+        background: var(--dv-color-fill-base);
+        border: 1px solid var(--dv-color-border-base);
+        border-radius: 4px;
+    }
+
+    .table-col-body {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        text-align: center;
+    }
+
+    .row-body2 {
+        font-size: 24px;
+    }
+
+    .row-body3 {
+        color: var(--dv-color-text-secondary);
+    }
+}

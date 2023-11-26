@@ -1,0 +1,62 @@
+{
+  "name": "@ued_fpi/data-visual",
+  "version": "1.2.15",
+  "main": "./dist/lib/index.js",
+  "module": "./dist/es/index.mjs",
+  "typings": "./dist/es/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/lib/index.js",
+      "import": "./dist/es/index.mjs",
+      "types": "./dist/es/index.d.ts"
+    },
+    "./style": "./dist/es/style.css",
+    "./style/*.css": "./dist/style/*.css",
+    "./wgms": "./dist/es/wgms/src/index.mjs",
+    "./aims": "./dist/es/aims/src/index.mjs",
+    "./ipes": "./dist/es/ipes/src/index.mjs",
+    "./bmp": "./dist/es/bmp/src/index.mjs",
+    "./dist/es": "./dist/es/index.mjs",
+    "./dist/lib": "./dist/lib/index.js",
+    "./dist/es/*.mjs": "./dist/es/*.mjs",
+    "./dist/es/*": "./dist/es/*.mjs",
+    "./dist/lib/*.js": "./dist/lib/*.js",
+    "./dist/lib/*": "./dist/lib/*.js",
+    "./dist/es/*.css": "./dist/es/*.css",
+    "./dist/lib/*.css": "./dist/lib/*.css",
+    "./*": "./*"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "element-plus",
+    "vue3组件库",
+    "大屏组件"
+  ],
+  "style": "./dist/es/style.css",
+  "sideEffects": [
+    "./style/*",
+    "./dist/es/**/style/*",
+    "./dist/lib/**/style/*",
+    "**/*.css",
+    "./dist/es/**/*.css",
+    "./dist/lib/**/*.css"
+  ],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "scripts": {
+    "build": "vite build && npm run build:types && npm run build:gulp",
+    "build:gulp": "gulp -f ./build.ts",
+    "build:types": "vue-tsc -p tsconfig.declaration.json",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "release": "release-it && npm run browser",
+    "browser": "./browser.sh"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "e62ed8cf772b40265a4bea5819481ba226c0023a"
+}

@@ -1,0 +1,50 @@
+.dv-ipes-hazardous-list {
+    height: 138px;
+    font-family: var(--font-family-text);
+
+    .tool-tips {
+        &__panel {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            background: rgba(7, 29, 51, 0.95);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 2px;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        &__row {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        &__label {
+            margin-right: 44px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__marker {
+            margin-right: 8px;
+        }
+
+        &__value {
+            font-size: 16px;
+            color: var(--main-color);
+        }
+
+        &__suffix {
+            margin-left: 4px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+}

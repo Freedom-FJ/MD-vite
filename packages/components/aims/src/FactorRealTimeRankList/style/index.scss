@@ -1,0 +1,106 @@
+.dv-aims-factor-realtime-rank-list {
+    &-container {
+        height: 200px;
+        cursor: pointer;
+    }
+
+    &-header {
+        display: flex;
+        height: var(--dv-text-number1);
+        padding: 0;
+        margin: 0;
+        margin-bottom: 12px;
+        font-size: var(--dv-text-number1);
+        line-height: var(--dv-text-number1);
+        color: var(--dv-color-text-secondary);
+        list-style: none;
+
+        > li:first-child {
+            flex-shrink: 0;
+            width: 34px;
+        }
+
+        > li:nth-child(2) {
+            width: 282px;
+
+            > span {
+                display: block;
+                width: 100px;
+                text-align: right;
+            }
+        }
+
+        > li:last-child {
+            flex-shrink: 0;
+            width: 44px;
+            text-align: center;
+        }
+    }
+
+    &-list-wrap {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    &-list-item {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        height: 32px;
+        padding: 9px 0;
+        font-size: 14px;
+        line-height: 14px;
+        color: var(--dv-color-text-primary);
+
+        .rank {
+            width: 30px;
+            font-family: var(--dv-font-family-number);
+        }
+
+        .progress-box {
+            display: flex;
+            align-items: center;
+            width: 282px;
+
+            .name {
+                width: 100px;
+                margin-right: 8px;
+                overflow: hidden;
+                text-align: right;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .bar {
+                position: relative;
+                flex: 1;
+                height: 8px;
+                background: var(--dv-color-fill-base);
+            }
+
+            .progress-bar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+
+                &::after {
+                    position: absolute;
+                    top: -2px;
+                    right: -2px;
+                    width: 2px;
+                    height: 12px;
+                    content: " ";
+                    background: inherit;
+                }
+            }
+        }
+
+        .value {
+            width: 44px;
+            font-family: var(--dv-font-family-number);
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.dv-ipes-pollutant-source-manage {
+    display: flex;
+    width: 100%;
+
+    // background: #05213d;
+
+    .card-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        height: 70px;
+        padding: 12px;
+        cursor: pointer;
+        background: var(--dv-color-fill-base);
+        border: 1px solid var(--dv-color-border-base);
+        border-radius: 4px;
+
+        // &.active {
+        //     background: #000;
+        //     border: 1px solid #00ff95;
+        // }
+
+        .title {
+            margin-bottom: 8px;
+            font-style: var(--dv-text-headline2);
+            font-weight: 500;
+        }
+
+        .flex-c {
+            display: flex;
+            justify-content: center;
+
+            .status {
+                display: flex;
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number3);
+                font-weight: 500;
+
+                .normal {
+                    color: var(--dv-color-success);
+                }
+
+                .abnormal {
+                    color: var(--dv-color-danger);
+                }
+
+                .offline {
+                    color: var(--dv-color-text-primary);
+                }
+
+                span {
+                    padding: 0 2px;
+                    color: var(--dv-color-text-placeholder);
+                }
+            }
+        }
+    }
+
+    .card-box + .card-box {
+        margin-left: 8px;
+    }
+}

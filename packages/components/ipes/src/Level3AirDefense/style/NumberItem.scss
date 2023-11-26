@@ -1,0 +1,15 @@
+.dv-ipes-number-wrap {
+    width: auto;
+    color: rgba($color: #fff, $alpha: 0.2);
+}
+
+.dv-ipes-number-wrap span:not(.last)::after {
+    padding-right: 1px;
+    padding-left: 1px;
+    color: rgba($color: #fff, $alpha: 0.2);
+    content: "/";
+}
+
+.dv-ipes-number-wrap span:last-child::after {
+    content: "";
+}

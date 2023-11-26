@@ -1,0 +1,29 @@
+.dv-ipes-tabs-wrap {
+    display: flex;
+    width: 100%;
+    height: 24px;
+    font-size: 14px;
+
+    .dv-ipes-tabs-item {
+        box-sizing: border-box;
+        display: table-cell;
+        flex: 1;
+        height: 24px;
+        padding: 0 10px;
+        line-height: 24px;
+        color: var(--dv-color-text-primary);
+        text-align: center;
+        cursor: pointer;
+        background: var(--dv-color-fill-blank);
+        border: 1px solid var(--dv-color-border-base);
+        border-radius: 4px;
+    }
+
+    .dv-ipes-tabs-item + .dv-ipes-tabs-item {
+        margin-left: 2px;
+    }
+
+    .dv-ipes-activeTab {
+        background: var(--dv-color-primary);
+    }
+}

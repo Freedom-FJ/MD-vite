@@ -1,0 +1,126 @@
+.dv-aims-air-quality-calendar-container {
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .date-time {
+        justify-content: space-between;
+        padding: 0 8px;
+        margin-bottom: 12px;
+
+        .arrow {
+            width: 12px;
+            cursor: pointer;
+        }
+
+        .left-arrow {
+            margin-left: 16px;
+        }
+
+        .right-arrow {
+            margin-right: 16px;
+        }
+
+        .reset-date-picker {
+            width: auto;
+
+            .el-input__prefix,
+            .el-input__suffix {
+                display: none;
+            }
+
+            .el-input__wrapper {
+                width: 80px;
+                padding-right: 0;
+                padding-left: 0;
+                background-color: transparent;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .weeks,
+    .calendar-content,
+    .legends {
+        .item {
+            width: calc((100% - 12px) / 7);
+            text-align: center;
+        }
+    }
+
+    .weeks,
+    .calendar-content {
+        .item {
+            position: relative;
+            margin: 0 2px 2px 0;
+
+            &:nth-child(7n) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .weeks {
+        justify-content: space-between;
+        font-size: 12px;
+        opacity: 0.5;
+    }
+
+    .calendar-content {
+        display: block;
+        height: 204px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+        overflow: hidden;
+
+        .item {
+            float: left;
+            height: 32px;
+            font-family: var(--dv-font-family-number);
+            font-size: 12px;
+            color: #fff;
+
+            &.suff-null {
+                justify-content: flex-start;
+                color: #c0c4cc;
+                background: var(--dv-color-fill-base);
+
+                .suff-null-day {
+                    padding-left: 10px;
+                }
+            }
+
+            .day {
+                position: absolute;
+                top: 2px;
+                left: 4px;
+            }
+
+            .num {
+                position: absolute;
+                right: 4px;
+                bottom: 2px;
+            }
+        }
+    }
+
+    .legends {
+        justify-content: space-between;
+
+        .level {
+            margin-bottom: 4px;
+            font-size: 12px;
+            color: var(--dv-color-text-primary);
+        }
+
+        .num {
+            width: 48px;
+            height: 20px;
+            font-family: var(--dv-font-family-number);
+            font-size: 12px;
+            border-radius: 20px;
+        }
+    }
+}

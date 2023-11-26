@@ -1,0 +1,95 @@
+.dv-wgms-water-category {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: $bg-width;
+    height: 168px;
+    padding: 0 4px;
+
+    @include common-font;
+
+    .chart-pie {
+        width: 130px;
+        height: 130px;
+    }
+
+    .section-water-quality-lengend {
+        width: calc(100% - 146px);
+
+        // margin-left: 30px;
+
+        .lengend-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 6px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .icon {
+                display: block;
+                flex-shrink: 0;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+
+            .name {
+                // display: block;
+                width: 46px;
+                margin-left: 4px;
+                color: var(--dv-color-text-primary);
+            }
+
+            .flex-num {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 62px;
+                margin-right: 10px;
+            }
+
+            .num {
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number1);
+
+                // color: #0df;
+                color: var(--dv-color-text-primary);
+            }
+
+            .percent {
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number1);
+                color: var(--dv-color-text-primary);
+            }
+
+            .split {
+                margin: 0 2px;
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number1);
+                color: var(--dv-color-text-placeholder);
+            }
+
+            .text {
+                // margin-left: 18px;
+                color: var(--dv-color-text-secondary);
+            }
+
+            .compare {
+                display: block;
+                width: 42px;
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number1);
+                text-align: right;
+            }
+
+            .arrow-compare {
+                display: flex;
+                justify-content: center;
+                width: 16px;
+            }
+        }
+    }
+}

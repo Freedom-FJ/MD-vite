@@ -1,0 +1,199 @@
+// 面板
+@mixin panel() {
+    box-sizing: border-box;
+    padding: 10px 12px;
+    background: var(--bg-color-first-panel__card);
+    border: 1px solid rgba(170, 201, 255, 0.1);
+    border-radius: 3px;
+}
+
+.dv-ipes-env-manage {
+    position: relative;
+
+    .flex-v {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mgl16 {
+        margin-left: 16px;
+    }
+
+    .cloud {
+        position: absolute;
+        top: 20px;
+        left: 14px;
+    }
+
+    .module-title {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+
+    .harm-list {
+        // height: 61px;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px;
+        margin: 16px 0 18px;
+        font-family: var(--font-family-text);
+        background: var(--dv-color-fill-base);
+        border: 1px solid var(--dv-color-border-base);
+
+        .harm-list__column {
+            width: 150px;
+            height: 80px;
+            font-size: 18px;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+
+            &--primary {
+                background-image: url("./images/icon-env-primary.png");
+
+                .harm-list__column__value {
+                    color: var(--dv-color-success);
+                }
+            }
+
+            &--error {
+                background-image: url("./images/icon-env-error.png");
+
+                .harm-list__column__value {
+                    color: var(--dv-color-danger);
+                }
+            }
+
+            &--warning {
+                background-image: url("./images/icon-env-warning.png");
+
+                .harm-list__column__value {
+                    color: var(--dv-color-warning);
+                }
+            }
+
+            .harm-list__column__label {
+                font-size: 14px;
+                color: var(--dv-color-text-primary);
+            }
+
+            .harm-list__column__value {
+                margin: 4px 0 2px;
+                font-family: var(--dv-font-family-number);
+                font-size: 18px;
+            }
+        }
+    }
+
+    .date-text {
+        line-height: 1;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .harm-gas {
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 358px;
+        height: 32px;
+        padding: 8px 16px;
+        margin-bottom: 10px;
+        font-family: var(--font-family-text);
+        font-size: 16px;
+        text-align: center;
+        background:
+            radial-gradient(
+                49% 49% at 50% 0%,
+                rgba(0, 166, 255, 0.7) 0%,
+                rgba(0, 126, 255, 0.19) 47%,
+                rgba(0, 126, 255, 0) 84%
+            ),
+            radial-gradient(50% 50% at 50% 100%, #00a6ff 0%, rgba(0, 48, 97, 0) 100%),
+            linear-gradient(90deg, rgba(0, 48, 97, 0) 0%, #003061 50%, rgba(0, 48, 97, 0) 99%);
+        border-style: solid;
+        border-width: 1px 0;
+        border-image:
+            linear-gradient(
+                270deg,
+                rgba(52, 164, 255, 0) 0%,
+                #34b8ff 48%,
+                rgba(52, 164, 255, 0) 100%
+            )
+            1 0 1 0;
+    }
+
+    .harm-source {
+        width: 100%;
+        margin-top: 16px;
+        overflow: hidden;
+        font-family: var(--font-family-text);
+
+        // 添加进度条背景色
+        /* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+        :deep(.el-progress-bar__outer) {
+            background: #032649;
+        }
+
+        .harm-source__inner {
+            display: flex;
+            width: 200%;
+            transition: ease transform 300ms;
+            transform: translate3d(0, 0, 0);
+        }
+
+        .harm-source__title {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+
+            .unit {
+                opacity: 0.6;
+            }
+        }
+
+        .harm-source__row {
+            @include panel;
+
+            width: 100%;
+        }
+
+        .harm-source__col {
+            display: flex;
+            flex-direction: column;
+            margin: 8px 0;
+
+            &:nth-last-child(1) {
+                margin-bottom: 0;
+            }
+        }
+
+        .harm-source__total {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 24px;
+
+            .value {
+                display: flex;
+                align-items: center;
+                font-family: var(--dv-font-family-number);
+            }
+
+            .child {
+                color: #0eed9b;
+            }
+
+            .space {
+                padding: 0 2px;
+                opacity: 0.2;
+            }
+
+            .parent {
+                color: var(--main-color);
+            }
+        }
+    }
+}

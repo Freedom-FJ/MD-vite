@@ -1,0 +1,148 @@
+.dv-bmp-tab-item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 182px;
+    height: 136px;
+    padding: 16px;
+    overflow: hidden;
+    background-color: var(--dv-color-fill-base);
+    border: 1px solid var(--dv-color-border-base);
+    border-radius: 4px;
+
+    .title {
+        margin-bottom: 24px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        color: var(--dv-color-text-primary);
+        text-align: center;
+        letter-spacing: 0;
+    }
+
+    .today-line {
+        display: flex;
+        align-items: center;
+
+        .label {
+            margin-right: 4px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 16px;
+            color: var(--dv-color-text-secondary);
+            text-align: center;
+            letter-spacing: 0;
+            white-space: nowrap;
+        }
+
+        .today-right {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .value {
+                font-family: var(--dv-font-family-number);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 14px;
+                color: var(--dv-color-success);
+                text-align: center;
+                letter-spacing: 0;
+            }
+
+            .text {
+                font-family: var(--dv-font-family-number);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 14px;
+                color: var(--dv-color-text-placeholder);
+                text-align: center;
+                letter-spacing: 0;
+            }
+
+            .label-num {
+                font-family: var(--dv-font-family-number);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 14px;
+                color: var(--dv-color-text-primary);
+                text-align: center;
+                letter-spacing: 0;
+            }
+
+            .chart {
+                width: 16px;
+                height: 16px;
+                margin-left: 8px;
+            }
+        }
+    }
+
+    .year-line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 16px;
+
+        .year-label {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+            color: var(--dv-color-text-secondary);
+            text-align: center;
+            letter-spacing: 0;
+            white-space: nowrap;
+        }
+
+        .year-right {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .year-value {
+                font-family: var(--dv-font-family-number);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 14px;
+                color: var(--dv-color-index);
+                text-align: center;
+                letter-spacing: 0;
+            }
+
+            .year-text {
+                font-family: var(--dv-font-family-number);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 14px;
+                color: var(--dv-color-text-placeholder);
+                text-align: center;
+                letter-spacing: 0;
+            }
+
+            .year-total {
+                font-family: var(--dv-font-family-number);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 14px;
+                color: var(--dv-color-text-primary);
+                text-align: center;
+                letter-spacing: 0;
+            }
+        }
+    }
+
+    .bottom-bar {
+        width: 100%;
+        height: 8px;
+        margin-top: 8px;
+        background-color: var(--dv-color-fill-lighter);
+
+        .bar-value {
+            height: 100%;
+            background: var(--dv-color-index);
+        }
+    }
+}

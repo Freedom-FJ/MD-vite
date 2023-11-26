@@ -1,0 +1,70 @@
+@mixin abs-full() {
+    position: absolute;
+    width: 100%;
+}
+
+.dv-ipes-progress-bar {
+    position: relative;
+    height: 12px;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: -10px;
+        bottom: 0;
+        width: 14px;
+        height: 12px;
+        content: "";
+        background:
+
+            url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAcCAYAAAB75n/uAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAAAFySURBVEiJvZaxjcJAEEXfWITkpgyugCsAyQkhHVgWAXTgDkiOlTsgJAFRAAVAGUvuEGkuuBXCeG28Bu5n9u78b2ufZwwB0jSda5rOQ2okwDxBZPt3oVMpit3bAjTLxqgegaG7VSLyLcacXw7QLBuhegJGD0sWkS8xxrbVR0/Mh6gePOYAI1QPmmVDz9rzAM3zAaobYNxSP0Z1o3k+CA7A2hWQtD2dU+L2dg/QNJ0j0h1HkUZ8a4d8h2Pjazfo6sO3EuDBMVQ1fG8BLTiGqoJv5MzbcAxVBV/RPB9wuWzpRkyIdsTxNArAMVQJ1q4iRDo3vGCJSEQcL4D9B+z3xPFC4HbIR9rbQojODtfyfzAFEGMsIhOgfMG8RGRy38IrvUiMOaM6A649zK+ozh6HUK3ZSVHsUF0G26sufWPU202lKH6AdYD92tXU1DwPuuO7d3u9av3IOuB7w7FXgAv53NCHRnxrOPYOcCH3+HpxfIv6/Dr+Ar+Uv7XAJFFtAAAAAElFTkSuQmCC")
+            no-repeat center;
+        background-size: 100%;
+    }
+
+    .progress-bar__outer__top {
+        @include abs-full;
+
+        top: 0;
+        left: 0;
+        height: 50%;
+        overflow: hidden;
+        background: var(--dv-color-danger);
+        transform: skewX(-45deg);
+
+        .progress-bar__inner {
+            @include abs-full;
+
+            top: 0;
+            bottom: 0;
+            left: -100%;
+            height: 100%;
+            background: var(--dv-color-success);
+            transition: ease transform 300ms;
+            transform: skewX(-45deg);
+        }
+    }
+
+    .progress-bar__outer__bottom {
+        @include abs-full;
+
+        bottom: 0;
+        left: 0;
+        height: 50%;
+        overflow: hidden;
+        background: var(--dv-color-danger);
+        transform: skewX(45deg);
+
+        .progress-bar__inner {
+            @include abs-full;
+
+            top: 0;
+            bottom: 0;
+            left: -100%;
+            height: 100%;
+            background: var(--dv-color-success);
+            transition: ease transform 300ms;
+            transform: skewX(45deg);
+        }
+    }
+}

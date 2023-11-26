@@ -1,0 +1,61 @@
+.basicDialogAnimation-enter-active {
+    animation: basic-dialog-animation-enter 0.3s;
+}
+
+.dv-aims-basic-dialog {
+    &-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        box-sizing: border-box;
+        padding: 0 12px 12px;
+        background: #001121;
+        box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.16), 0 12px 32px 0 rgba(0, 0, 0, 0.12), 0 16px 48px 16px rgba(0, 0, 0, 0.08);
+        backdrop-filter: blur(30px);
+    }
+
+    &-header {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        padding: 10px 4px;
+    }
+
+    &-header-left {
+        display: flex;
+        align-items: center;
+    }
+
+    &-header-right {
+        display: flex;
+        align-items: center;
+    }
+
+    &-close {
+        width: 12px;
+        height: 12px;
+        color: #d3c9c9;
+        cursor: pointer;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &-header-title {
+        box-sizing: border-box;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #fff;
+        letter-spacing: 0;
+    }
+
+    &-content {
+        box-sizing: border-box;
+        padding: 12px;
+        background: #05213d;
+    }
+}

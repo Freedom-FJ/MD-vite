@@ -1,0 +1,139 @@
+.dv-aims-air-quality-realtime {
+    &-container {
+        padding: 12px;
+        color: var(--dv-color-text-primary);
+        background-image: url(./images/bg.png);
+        background-repeat: no-repeat;
+        background-position: 166px 8px;
+        background-size: 182px 68px;
+    }
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        height: 64px;
+    }
+
+    &-top-left {
+        display: flex;
+        justify-content: flex-start;
+        width: 164px;
+        height: 48px;
+
+        .aqiValue {
+            box-sizing: border-box;
+            height: 48px;
+            padding-left: 10px;
+            margin-right: 16px;
+            font-family: var(--dv-font-family-number);
+            font-size: var(--dv-text-number9);
+            font-weight: 500;
+            line-height: 48px;
+        }
+
+        .aqiInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 64px;
+
+            span:first-child {
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number4);
+                font-weight: normal;
+                line-height: var(--dv-text-number4);
+                color: var(--dv-color-text-primary);
+            }
+
+            span:last-child {
+                font-size: var(--dv-text-headline1);
+                font-weight: 500;
+                line-height: var(--dv-text-headline1);
+            }
+        }
+    }
+
+    &-top-right {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 48px;
+        padding-top: 24px;
+        margin-right: 40px;
+
+        .data-time {
+            position: absolute;
+            top: -2px;
+            right: 0;
+            font-family: var(--dv-font-family-number);
+            font-size: var(--dv-text-number1);
+            font-weight: normal;
+            color: var(--dv-color-text-secondary);
+        }
+
+        .text {
+            margin-right: 16px;
+            font-size: var(--dv-text-body1);
+            font-weight: normal;
+            line-height: var(--dv-text-body1);
+            color: var(--dv-color-text-secondary);
+        }
+
+        .value {
+            font-family: var(--dv-font-family-number);
+            font-size: var(--dv-text-number1);
+            font-weight: 500;
+        }
+    }
+
+    &-center {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-size: var(--dv-text-body1);
+        font-weight: normal;
+        line-height: var(--dv-text-body1);
+        color: var(--dv-color-text-secondary);
+
+        >span:first-child {
+            color: var(--dv-color-text-primary);
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        height: 60px;
+        padding: 0;
+    }
+
+    &-bottom-item {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+
+        .value {
+            font-family: var(--dv-font-family-number);
+            font-size: var(--dv-text-number5);
+            font-weight: 500;
+            line-height: var(--dv-text-number5);
+        }
+
+        .line {
+            width: 26px;
+            height: 4px;
+            border-radius: 100px;
+        }
+
+        .name {
+            font-family: var(--dv-font-family-number);
+            font-size: var(--dv-text-number3);
+            font-weight: 500;
+            line-height: 16px;
+            color: var(--dv-color-text-primary);
+        }
+    }
+}

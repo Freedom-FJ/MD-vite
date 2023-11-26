@@ -1,0 +1,14 @@
+.dv-ipes-percent-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 8px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 4px;
+
+    .percent-bar__inner {
+        height: 8px;
+    }
+}

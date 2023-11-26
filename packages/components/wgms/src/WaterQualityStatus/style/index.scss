@@ -1,0 +1,47 @@
+.dv-wgms-water-quality {
+    width: $bg-width;
+    padding: 12px;
+
+    &-status {
+        padding: 9px 12px;
+        margin-bottom: 12px;
+
+        @include common-font;
+        @include common-bg;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-top {
+            margin-bottom: 8px;
+
+            .dv-wgms-rate {
+                font-family: var(--dv-font-family-number);
+            }
+        }
+
+        &-bottom {
+            margin-top: 8px;
+
+            .dv-wgms-text {
+                color: #909399;
+            }
+
+            .dv-wgms-value {
+                margin: 0 4px;
+                font-family: var(--dv-font-family-number);
+            }
+
+            .dv-wgms-same {
+                display: flex;
+                align-items: center;
+            }
+
+            .same {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

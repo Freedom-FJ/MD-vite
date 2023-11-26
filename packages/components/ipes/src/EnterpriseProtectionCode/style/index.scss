@@ -1,0 +1,116 @@
+.dv-ipes-flex-bw-c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dv-ipes-enterprise-protection-code {
+    box-sizing: border-box;
+    height: 192px;
+}
+
+.dv-ipes-app-header-title {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+}
+
+// 企业环保码
+.dv-ipes-env-code-list {
+    box-sizing: border-box;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+
+    .dv-ipes-code-wrap:first-child {
+        background-color: var(--dv-color-danger-20);
+    }
+
+    .dv-ipes-code-wrap:nth-child(2) {
+        background-color: var(--dv-color-warning-20);
+    }
+
+    .dv-ipes-code-wrap:nth-child(3) {
+        background-color: var(--dv-color-success-20);
+    }
+
+    .dv-ipes-code-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: calc(33% - 6px);
+        height: 112px;
+        border-radius: 3px;
+
+        svg {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 8px;
+        }
+
+        .dv-ipes-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 4px;
+        }
+
+        .dv-ipes-value {
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--dv-color-text-secondary);
+
+            span {
+                margin-right: 2px;
+            }
+        }
+
+        .dv-ipes-rate-num {
+            font-size: 16px;
+            color: var(--dv-color-text-primary);
+        }
+    }
+}
+
+.dv-ipes-item-module {
+    padding: 0 8px;
+    margin-bottom: 4px;
+    line-height: 16px;
+}
+
+.dv-ipes-enterprise-protection-code .dv-ipes-item-module:last-child {
+    margin-bottom: 0;
+}
+
+// 公共
+.dv-ipes-item-common {
+    height: 40px;
+}
+
+.dv-ipes-energy-top {
+    height: 16px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.dv-ipes-energy-bottom {
+    width: 100%;
+    height: 4px;
+}
+
+.dv-ipes-common-title {
+    height: 16px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.dv-ipes-mgb16 {
+    margin-bottom: 16px;
+}
+
+.dv-ipes-no-data {
+    height: 40px;
+    line-height: 28px;
+    text-align: center;
+}

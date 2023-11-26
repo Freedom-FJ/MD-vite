@@ -1,0 +1,84 @@
+.dv-wgms-common-panel {
+    position: relative;
+    width: 400px;
+
+    .common-bg {
+        position: absolute;
+        width: 100%;
+        border-top: 30px solid;
+        border-right: 70px solid;
+        border-bottom: 30px solid;
+        border-left: 70px solid;
+        border-image-slice: 30 70 30 70 fill;
+    }
+
+    .panel-content {
+        position: absolute;
+        width: 100%;
+        padding: 8px 16px;
+    }
+
+    .top-title {
+        position: relative;
+        z-index: 9;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 34px;
+        padding-left: 28px;
+        background-size: 100% 100%;
+        border-top: 17px solid;
+        border-right: 30px solid;
+        border-bottom: 18px solid;
+        border-left: 30px solid;
+        border-image-source: url(./images/title.png);
+        border-image-slice: 17 30 18 30  fill;
+
+        .text-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: calc(100% + 17px);
+            height: 35px;
+            transform: translateY(-18px);
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+
+            .main-title {
+                max-width: 320px;
+                font-family: PangMenZhengDao;
+                font-size: 20px;
+                color: #d8f1ff;
+            }
+
+            .sub {
+                font-family: Furore;
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+}
+
+/* 若浏览器支持 backdrop-filter，则透明度为 50%，并启用毛玻璃 */
+@supports (-webkit-backdrop-filter: blur(30px)) or (backdrop-filter: blur(30px)) {
+    .dv-wgms-bf-blur {
+        background-color: rgba(#000, 0.8);
+        backdrop-filter: blur(30px);
+    }
+}
+
+/* 若浏览器器不支持，则使用 MaterialDesign 的风格 */
+@supports not ((-webkit-backdrop-filter: blur(30px)) or (backdrop-filter: blur(30px))) {
+    .dv-wgms-bf-blur {
+        background-color: rgba(#000, 0.8);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18), 0 6px 10px rgb(0, 0, 0, 0.22);
+    }
+}

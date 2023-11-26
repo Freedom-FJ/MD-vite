@@ -1,0 +1,103 @@
+.dv-ipes-OrdorControl {
+    height: 406px;
+
+    .specific-site {
+        color: var(--dv-color-text-primary);
+
+        .site-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 16px;
+
+            .site-title {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .time {
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 16px;
+
+                // opacity: 0.6;
+                color: var(--dv-color-text-secondary);
+                white-space: nowrap;
+            }
+        }
+
+        .site-factor {
+            box-sizing: border-box;
+            height: 168px;
+            padding: 12px;
+            margin-bottom: 8px;
+            overflow: hidden;
+            background: var(--dv-color-fill-base);
+            border: 1px solid var(--dv-color-border-base);
+            border-radius: 4px;
+
+            .item-factor {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 18px;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 16px;
+
+                .left {
+                    flex: 1;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                .right {
+                    margin-left: 8px;
+                }
+            }
+
+            .item-factor + .item-factor {
+                margin-top: 4px;
+            }
+        }
+
+        .smell-number {
+            box-sizing: border-box;
+            height: 178px;
+            padding: 12px;
+            background: var(--dv-color-fill-base);
+            border: 1px solid var(--dv-color-border-base);
+            border-radius: 4px;
+
+            .head {
+                .title {
+                    margin-bottom: 8px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 14px;
+                    color: var(--dv-color-text-primary);
+                }
+
+                .unit {
+                    font-size: 12px;
+                    color: rgba(255, 255, 255, 0.6);
+                    opacity: 0.5;
+                }
+            }
+
+            .echarts-bar {
+                height: 120px;
+            }
+        }
+
+        .nodata {
+            display: flex;
+            align-self: center;
+            justify-content: center;
+        }
+    }
+}

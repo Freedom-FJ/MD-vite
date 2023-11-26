@@ -1,0 +1,108 @@
+.dv-ipes-business-manage {
+    box-sizing: border-box;
+
+    @mixin panel() {
+        box-sizing: border-box;
+        height: 80px;
+        padding: 12px;
+        background: var(--dv-color-fill-base);
+        border: 1px solid var(--dv-color-border-base);
+        border-radius: 4px;
+    }
+
+    .device-row {
+        font-family: var(--font-family-text);
+
+        .device-row__info {
+            @include panel;
+        }
+
+        .device-row__percent {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+
+            .title {
+                margin-right: 12px;
+            }
+
+            .value {
+                font-family: var(--dv-font-family-number);
+                color: #00deff;
+            }
+
+            .date {
+                margin-left: auto;
+                font-family: var(--dv-font-family-number);
+                font-size: 14px;
+                font-size: var(--dv-text-number1);
+                line-height: 14px;
+                color: var(--dv-color-text-secondary);
+            }
+        }
+
+        .device-row__progress {
+            width: calc(100% - 14px);
+            margin: 8px 0;
+        }
+
+        .device-row__detail {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+            line-height: 14px;
+
+            .left {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+
+            .title {
+                display: flex;
+                align-items: center;
+                margin-right: 8px;
+                color: var(--dv-color-text-secondary);
+            }
+
+            .percent,
+            .value {
+                font-family: var(--dv-font-family-number);
+            }
+
+            .icon {
+                width: 16px * 1;
+                height: 16px * 1;
+            }
+
+            .right {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+
+                .space {
+                    color: var(--dv-color-text-secondary);
+                }
+            }
+        }
+
+        .space {
+            margin: 0 4px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+
+    .mgt12 {
+        margin-top: 12px;
+    }
+
+    .mgr4 {
+        margin-right: 4px;
+    }
+}

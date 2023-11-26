@@ -1,0 +1,26 @@
+.dv-wgms-auxiliary-judgment {
+    box-sizing: border-box;
+    width: $bg-width;
+    min-height: 168px;
+
+    .conclusion-box {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 12px;
+        background: var(--dv-color-fill-base);
+        border: 1px solid var(--dv-color-border-base);
+        border-radius: 4px;
+
+        .conclusion-text {
+            margin-bottom: 8px;
+            font-size: var(--dv-text-body1);
+            line-height: 20px;
+            color: var(--dv-color-text-primary);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

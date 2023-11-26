@@ -1,0 +1,54 @@
+.dv-wgms-compliance-rate {
+    width: $bg-width;
+    height: 120px;
+    padding: 12px;
+
+    @include common-font;
+    @include common-bg;
+
+    &-one {
+        flex-direction: column;
+
+        &-icon {
+            margin-top: 2px;
+
+            img {
+                width: 80px;
+            }
+        }
+
+        &-label {
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+
+        &-value {
+            span:nth-child(1) {
+                margin-right: 4px;
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number3);
+                color: var(--dv-color-index-110);
+            }
+
+            span:nth-child(2) {
+                color: var(--dv-color-text-secondary);
+            }
+        }
+    }
+}
+
+.dv-wgms-compliance-one {
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.title-text {
+    margin-bottom: 8px;
+    font-size: var(--dv-text-headline1);
+    font-weight: 500;
+    line-height: var(--dv-text-headline1);
+    color: var(--dv-color-text-primary);
+}

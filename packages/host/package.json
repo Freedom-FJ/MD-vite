@@ -1,0 +1,11 @@
+{
+  "name": "@data-visual/host",
+  "private": true,
+  "version": "1.2.14",
+  "scripts": {
+    "dev": "vite --port 4999 --strictPort",
+    "serve": "vite preview --port 4999 --strictPort",
+    "build": "vite build",
+    "clean": "rm -rf dist"
+  }
+}

@@ -1,0 +1,66 @@
+.dv-aims-cieq-contributio-andlysis {
+    &-container {
+        height: 160px;
+    }
+
+    &-list-wrap {
+        height: calc(100%);
+    }
+
+    &-list-header {
+        display: flex;
+        height: 32px;
+        background: var(--dv-color-fill-base);
+
+        > li {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            font-family: MiSans;
+            font-size: 14px;
+            color: var(--dv-color-text-secondary);
+        }
+    }
+
+    &-list-content {
+        > li {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 32px;
+
+            > div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                font-family: MiSans;
+                font-size: 14px;
+                font-weight: normal;
+                color: var(--dv-color-text-primary);
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .period {
+                img {
+                    width: 8px;
+                    height: 12px;
+                    margin-top: -3px;
+                    margin-left: 2px;
+                    vertical-align: middle;
+                }
+
+                .flat {
+                    width: 12px;
+                    height: 8px;
+                }
+            }
+
+            .value {
+                font-family: var(--dv-font-family-number);
+            }
+        }
+    }
+}

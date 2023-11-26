@@ -1,0 +1,131 @@
+// 面板
+@mixin panel() {
+    box-sizing: border-box;
+    padding: 12px;
+    background: var(--bg-color-first-panel__card);
+    border: 1px solid rgba(170, 201, 255, 0.1);
+    border-radius: 4px;
+}
+
+.DvIpesStreetLightingManagement {
+    .lighting-list {
+        height: 216px;
+        margin-top: 8px;
+        font-family: var(--font-family-text);
+    }
+
+    .module-title {
+        font-family: var(--font-family-text);
+
+        .title {
+            display: flex;
+            align-items: center;
+            font-size: var(--dv-text-headline1);
+            line-height: 1;
+            color: var(--dv-color-text-primary);
+            white-space: nowrap;
+
+            .icon {
+                width: 18px;
+                height: 18px;
+            }
+
+            .date-text {
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number1);
+                line-height: 1;
+                color: var(--dv-color-text-secondary);
+            }
+        }
+
+        .date {
+            font-family: var(--font-family-text);
+            font-size: 24px;
+            line-height: 1;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    .lighting-device {
+        font-family: var(--font-family-text);
+
+        .lighting-device__info {
+            margin: 8px 0;
+
+            @include panel;
+
+            background: rgba(68, 136, 208, 0.1);
+        }
+
+        .lighting-device__percent {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: var(--dv-color-text-primary);
+            line-height: 14px;
+
+            .value {
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number1);
+                color: var(--dv-color-index);
+            }
+        }
+
+        .lighting-device__progress {
+            margin: 14px 0;
+        }
+
+        .lighting-device__detail {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            font-size: var(--dv-text-body1);
+            line-height: 14px;
+            color: var(--dv-color-text-secondary);
+
+            .left {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+
+            .title {
+                display: flex;
+                align-items: center;
+                margin-right: 8px;
+            }
+
+            .percent,
+            .value {
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number1);
+                color: var(--dv-color-text-primary);
+            }
+
+            .space {
+                color: var(--dv-color-text-secondary);
+            }
+
+            .icon {
+                width: 14px * 1;
+                height: 14px * 1;
+                margin-right: 4px;
+            }
+
+            .right {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+
+            .lightBg1 {
+                color: var(--dv-color-success);
+            }
+
+            .lightBg2 {
+                color: var(--dv-color-danger);
+            }
+        }
+    }
+}

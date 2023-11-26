@@ -1,0 +1,184 @@
+.dv-ipes-inspection-manage {
+    box-sizing: border-box;
+    width: 100%;
+
+    .access-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+
+        .module-icon {
+            width: 14px;
+            height: 14px;
+            margin-right: 4px;
+        }
+
+        &__title {
+            display: flex;
+            align-items: center;
+            font-size: var(--dv-text-headline1);
+            line-height: 14px;
+            color: var(--dv-color-text-primary);
+        }
+
+        .inspection-total {
+            font-family: var(--dv-font-family-number);
+            font-size: var(--dv-text-number3);
+            color: var(--dv-color-index);
+        }
+
+        &__title--sub {
+            font-family: var(--dv-font-family-number);
+            font-size: var(--dv-text-number1);
+            color: var(--dv-color-text-secondary);
+        }
+    }
+
+    .inspection-total {
+        z-index: 1;
+
+        .num {
+            font-family: var(--dv-font-family-number);
+            font-size: var(--dv-text-number3);
+            color: var(--dv-color-index);
+        }
+    }
+
+    .mgl-8 {
+        margin-left: 8px;
+    }
+
+    .inspection-event {
+        padding: 12px;
+        margin: 8px 0 16px;
+        font-family: var(--font-family-text);
+        background: var(--dv-color-fill-base);
+        border: 1px solid var(--dv-color-border-base);
+        border-radius: 4px;
+
+        .inspection-num {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+
+            .right {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                font-size: 18px;
+                line-height: 18px;
+                text-align: right;
+            }
+
+            .value {
+                font-family: var(--dv-font-family-number);
+            }
+
+            .label {
+                font-size: var(--dv-text-headline2);
+                font-weight: 500;
+            }
+
+            .num {
+                margin-left: 8px;
+            }
+        }
+
+        .inspection-progress {
+            height: 8px;
+            margin: 10px 0;
+        }
+
+        .inspection-percent {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            font-size: var(dv-text-body1);
+            color: var(--dv-color-text-secondary);
+
+            .left {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+
+            .title {
+                display: flex;
+                align-items: center;
+                margin-right: 8px;
+                font-weight: 500;
+                color: #a6a9ad;
+            }
+
+            .right {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                font-family: var(--dv-font-family-number);
+                font-size: 14px;
+                line-height: 14px;
+                text-align: right;
+            }
+        }
+
+        .space {
+            margin: 0 4px;
+            font-size: 16px;
+            line-height: 16px;
+            opacity: 0.2;
+        }
+    }
+
+    .inspection-list {
+        margin-top: 8px;
+        font-family: var(--font-family-text);
+
+        .inspection-list-item {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            height: 56px;
+            padding: 7px 16px;
+            margin: 0 0 8px;
+            white-space: nowrap;
+            cursor: pointer;
+
+            /* 二级面板填充 */
+            background: var(--dv-color-fill-base);
+
+            /* 二级面板描边 */
+            border: 1px solid var(--dv-color-border-base);
+            border-radius: 4px;
+            transition: ease all 180ms;
+
+            &--active {
+                box-sizing: border-box;
+                background: #000;
+                border: 1px solid #05ffd2;
+                box-shadow: 0 0 8px 0 #05ffe6;
+            }
+
+            &__name {
+                width: 100%;
+                overflow: hidden;
+                font-family: var(--font-family-text);
+                font-size: var(--dv-text-body1);
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            &__time {
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number1);
+                font-weight: normal;
+                line-height: 14px;
+                color: var(--dv-color-text-secondary);
+            }
+        }
+    }
+}

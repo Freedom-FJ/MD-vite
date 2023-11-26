@@ -1,0 +1,84 @@
+.dv-wgms-upstream-section {
+    box-sizing: border-box;
+    width: $bg-width;
+    height: 136px;
+
+    .section-correlation-table {
+        width: 100%;
+        height: 100%;
+
+        .section-correlation-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 18px;
+            line-height: 16px;
+
+            span {
+                display: block;
+                font-size: var(--dv-text-body1);
+            }
+
+            &.header {
+                margin-top: 8px;
+
+                span {
+                    font-size: var(--dv-text-body1);
+                    color: var(--dv-color-text-secondary);
+                }
+
+                .progress {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 8px;
+                }
+            }
+
+            .sort {
+                width: 24px;
+                padding-left: 4px;
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number3);
+                color: var(--dv-color-text-primary);
+                text-align: left;
+            }
+
+            .name {
+                width: 80px;
+                overflow: hidden;
+                font-size: var(--dv-text-body1);
+                color: var(--dv-color-text-primary);
+                text-align: center;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .progress {
+                width: 216px;
+            }
+
+            .correlation-coefficient {
+                flex: 1;
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number3);
+                text-align: center;
+
+                &.green {
+                    color: var(--dv-color-success);
+                }
+            }
+
+            .alarm {
+                flex: 1;
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number3);
+                text-align: center;
+
+                &.red {
+                    color: var(--dv-color-danger);
+                }
+            }
+        }
+    }
+}

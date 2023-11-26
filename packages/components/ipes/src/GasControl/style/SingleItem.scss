@@ -1,0 +1,32 @@
+.dv-ipes-single-item {
+    box-sizing: border-box;
+    height: 28px;
+    padding: 0 8px;
+    background-color: var(--dv-color-fill-base);
+    border: 1px solid var(--dv-color-border-base);
+    border-radius: 4px;
+
+    .dv-ipes-num:first-child {
+        color: var(--dv-color-success);
+    }
+
+    .dv-ipes-num:nth-child(2) {
+        color: var(--dv-color-danger);
+    }
+
+    .dv-ipes-num:nth-child(3) {
+        color: var(--dv-color-text-primary);
+    }
+
+    .dv-ipes-num:not(:last-child)::after {
+        margin: 0 2px;
+        color: var(--dv-color-text-placeholder);
+        content: "/";
+    }
+}
+
+.dv-ipes-flex-bw-c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

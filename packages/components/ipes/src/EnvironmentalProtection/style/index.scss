@@ -1,0 +1,178 @@
+.light {
+    .dv-ipes-risk-emergency-manage {
+        --image-top: url("./images/pietop-light.png");
+        --image-bottom: url("./images/piebottom-light.png");
+    }
+}
+
+.dark {
+    .dv-ipes-risk-emergency-manage {
+        --image-top: url("./images/pietop.png");
+        --image-bottom: url("./images/piebottom.png");
+    }
+}
+
+.dv-ipes-risk-emergency-manage {
+    width: 100%;
+    color: var(--dv-color-text-primary);
+
+    .title {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .risk_body {
+        display: flex;
+        justify-content: flex-start;
+        margin: 16px 28px;
+    }
+
+    .pie-card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 135px;
+        height: 96px;
+
+        .pie {
+            width: 135px;
+            height: 94px;
+        }
+
+        .bottom {
+            // z-index: -1;
+            position: absolute;
+            bottom: 0;
+            width: 135px;
+            height: 58.34px;
+            background-image: var(--image-bottom);
+            background-size: contain;
+        }
+
+        .top {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 94px;
+            height: 68.13px;
+            background-image: var(--image-top);
+            background-size: contain;
+            transform: translateX(-50%);
+        }
+
+        .label {
+            position: absolute;
+            top: 12px;
+            width: 100%;
+            text-align: center;
+
+            .title {
+                display: block;
+                font-size: var(--dv-text-headline2);
+                font-weight: 500;
+            }
+
+            .total {
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number6);
+                font-weight: normal;
+                line-height: var(--dv-text-number6);
+                text-shadow: var(--dv-text-shadow);
+            }
+
+            .mgt8 {
+                margin-top: 8px;
+            }
+        }
+    }
+
+    .legend {
+        flex: 1;
+        margin-left: 24px;
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 8px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            .circle {
+                width: 10px;
+                height: 10px;
+                margin-right: 4px;
+                border-radius: 10px;
+            }
+
+            .circle,
+            .typename {
+                flex-shrink: 0;
+                font-size: var(--dv-text-body1);
+                font-weight: normal;
+                text-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+            }
+
+            .value {
+                flex: 1;
+                font-family: var(--dv-font-family-number);
+                font-size: 14px;
+                font-weight: normal;
+                color: var(--dv-color-index);
+                text-align: right;
+            }
+
+            .unit {
+                margin-left: 4px;
+                font-size: 14px;
+                font-weight: normal;
+                color: var(--dv-color-text-secondary);
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+
+        .mgr16 {
+            margin-right: 16px;
+            font-size: var(--dv-text-headline2);
+            font-weight: 500;
+        }
+
+        .total {
+            font-family: var(--dv-font-family-number);
+            font-size: var(--dv-text-number5);
+            font-weight: normal;
+        }
+
+        .unit {
+            margin-left: 4px;
+            color: var(--dv-color-text-secondary);
+        }
+    }
+}
+
+.dark {
+    .footer {
+        background: radial-gradient(49% 49% at 50% 0%, rgba(0, 166, 255, 0.7) 0%, rgba(0, 126, 255, 0.19) 47%, rgba(0, 126, 255, 0) 84%), radial-gradient(50% 50% at 50% 100%, #00a6ff 0%, rgba(0, 48, 97, 0) 100%), linear-gradient(90deg, rgba(0, 48, 97, 0) 0%, #003061 50%, rgba(0, 48, 97, 0) 99%);
+        border-style: solid;
+        border-width: 1px 0;
+        border-image: linear-gradient(270deg, rgba(52, 164, 255, 0) 0%, #34b8ff 48%, rgba(52, 164, 255, 0) 100%) 1 0 1 0;
+    }
+}
+
+.light {
+    .footer {
+        background: var(--dv-color-index-10);
+        border: 1px solid #b9d6ff;
+        border-radius: 4px;
+    }
+}

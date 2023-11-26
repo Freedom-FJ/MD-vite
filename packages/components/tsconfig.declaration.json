@@ -1,0 +1,29 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./dist/es",
+        // "outFile": "./dist/es/index.mjs",
+        "declaration": true,
+        // "composite": true,
+        "emitDeclarationOnly": true,
+    },
+    "include": [
+        // "./**/*.ts",
+        "../../utils.d.ts",
+        "auto-import.d.ts",
+        "components.d.ts",
+        "env.d.ts",
+        "types.d.ts",
+        "wgms/src/**/*.ts", 
+        "wgms/index.ts", 
+        "ipes/index.ts", 
+        "bmp/index.ts", 
+        "aims/index.ts", 
+        "ipes/src/**/*.ts", 
+        "aims/src/**/*.ts", 
+        "bmp/src/**/*.ts", 
+        "utils.ts",
+        "./index.ts"
+    ],
+    "exclude": ["node_modules", "**/__tests__/**", "**/__demos__/**", "**/*.md"],
+  }

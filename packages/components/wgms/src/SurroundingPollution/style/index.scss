@@ -1,0 +1,112 @@
+.dv-wgms-surrounding-pollution {
+    box-sizing: border-box;
+    width: $bg-width;
+    height: 412px;
+
+    .surrounding-comm-box {
+        box-sizing: border-box;
+        padding: 12px;
+        background: var(--dv-color-fill-base);
+        border: 1px solid var(--dv-color-border-base);
+        border-radius: 4px;
+
+        &.different {
+            padding: 8px 16px;
+        }
+
+        .name-num-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+
+            &.pd10 {
+                padding: 10px;
+            }
+
+            .name {
+                font-size: var(--dv-text-body1);
+                line-height: 20px;
+                color: var(--dv-color-text-primary);
+                text-align: center;
+            }
+
+            .num {
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number3);
+                line-height: 16px;
+
+                &.red {
+                    color: var(--dv-color-danger);
+                }
+            }
+
+            .num-box {
+                display: flex;
+                justify-content: center;
+
+                .total {
+                    font-family: var(--dv-font-family-number);
+                    font-size: var(--dv-text-number3);
+                    line-height: 16px;
+                    color: var(--dv-color-text-primary);
+                }
+
+                .split {
+                    font-size: var(--dv-text-number3);
+                    color: var(--dv-color-text-placeholder);
+                }
+            }
+        }
+    }
+
+    .surrounding-two-flex {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 142px;
+        margin-bottom: 12px;
+
+        .surrounding-two-left {
+            width: 267px;
+            height: 100%;
+
+            .title-box {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                .title {
+                    font-size: var(--dv-text-body1);
+                    color: var(--dv-color-text-primary);
+                }
+            }
+
+            .empty-data {
+                width: 100%;
+                margin-top: 20px;
+                color: var(--dv-color-text-placeholder);
+                text-align: center;
+            }
+        }
+
+        .surrounding-two-right {
+            width: calc(100% - 267px - 12px);
+            height: 100%;
+        }
+    }
+
+    .surrounding-three-flex {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+
+        .surrounding-three-item {
+            width: calc(33.3333% - 8px);
+            height: 100%;
+        }
+    }
+}

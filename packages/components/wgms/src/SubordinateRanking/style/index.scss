@@ -1,0 +1,59 @@
+.dv-wgms-subordinate-ranking-table {
+    width: $bg-width;
+
+    @include common-font;
+
+    .dv-wgms-sub-scroll-table {
+        width: 100%;
+        height: 256px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    .dv-wgms-subordinate-ranking-list {
+        display: flex;
+        margin-top: 4px;
+        line-height: 32px;
+
+        .dv-wgms-subordinate-ranking-sort {
+            display: block;
+            width: 12.5%;
+            padding-left: 8px;
+            font-family: var(--dv-font-family-number);
+            font-size: var(--dv-text-number1);
+            color: var(--dv-color-text-primary);
+            text-align: center;
+        }
+
+        .dv-wgms-subordinate-ranking-name {
+            display: block;
+            width: 18%;
+            overflow: hidden;
+            text-align: right;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .dv-wgms-subordinate-ranking-percent {
+            display: flex;
+            align-items: center;
+            width: 69.5%;
+
+            .dv-wgms-ranking-percent-progress {
+                width: 80%;
+                height: 8px;
+                padding: 0 8px;
+            }
+
+            .dv-wgms-ranking-percent-num {
+                display: block;
+                width: 20%;
+                padding-right: 8px;
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number1);
+                color: var(--dv-color-index);
+                text-align: center;
+            }
+        }
+    }
+}

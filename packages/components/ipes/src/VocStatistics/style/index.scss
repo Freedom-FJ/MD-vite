@@ -1,0 +1,42 @@
+.vocStatistics {
+    display: flex;
+    align-items: center;
+    height: 104px;
+
+    .base-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 152px;
+        height: 80px;
+        margin-right: 40px;
+        background: center / cover no-repeat url(./img/voc_bg.png);
+        background-position-y: bottom;
+
+        .year {
+            margin-bottom: 4px;
+            font-size: 16px;
+            color: var(--dv-color-text-pr);
+        }
+
+        .degree {
+            display: flex;
+            align-items: baseline;
+
+            .degree_num {
+                font-family: var(--dv-font-family-number);
+                font-size: 32px;
+                font-weight: 700;
+                color: var(--dv-color-index);
+                text-shadow: var(--dv-text-shadow);
+            }
+
+            .degree_text {
+                margin-left: 4px;
+                font-size: 14px;
+                color: var(--dv-color-text-secondary);
+            }
+        }
+    }
+}

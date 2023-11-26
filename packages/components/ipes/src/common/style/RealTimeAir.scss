@@ -1,0 +1,75 @@
+.dv-ipes-real-time-air {
+    position: relative;
+    height: 92px;
+
+    .canvas-class {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .real-title-box {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        line-height: 1;
+
+        .real-time {
+            color: var(--dv-color-text-secondary);
+        }
+    }
+
+    .pollute-div {
+        position: absolute;
+        top: 28px;
+        left: 12px;
+        display: flex;
+    }
+
+    .pollute-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 1;
+
+        .factor-name {
+            margin-bottom: 8px;
+        }
+    }
+
+    .first-pollute-flex {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 8px;
+        margin-left: 16px;
+        font-size: 14px;
+    }
+
+    .real-number {
+        margin-right: 4px;
+        font-family: var(--dv-text-number9);
+        font-size: 48px;
+        font-weight: normal;
+        letter-spacing: 0;
+    }
+
+    .value-length {
+        left: 10px;
+    }
+
+    .first-pollute {
+        height: 16px;
+        margin-right: 4px;
+        color: var(--dv-color-text-secondary);
+    }
+
+    .other-factore {
+        height: 16px;
+
+        .text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

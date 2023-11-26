@@ -1,0 +1,113 @@
+$bg-color: #05213d; // 面板背景色
+$bg-width: 376px; // 面板宽度
+
+// 基础字体
+@mixin common-font {
+    font-size: var(--dv-text-body1);
+    font-weight: normal;
+    line-height: var(--dv-text-body1);
+    color: var(--dv-color-text-primary);
+}
+
+// 基础字体
+@mixin common-font-16 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    color: #fff;
+    -webkit-text-stroke: rgba(0, 0, 0, 0) 1px;
+}
+
+// 二级面板公共背景及边框
+@mixin common-bg {
+    box-sizing: border-box;
+    background: var(--dv-color-fill-base);
+    border: 1px solid var(--dv-color-border-base);
+    border-radius: 4px;
+}
+
+// flex布局
+// 类名  .flex-center-center
+$justify: (
+    left: flex-start,
+    center: center,
+    right: flex-end,
+    between: space-between,
+    around: space-around
+);
+$align: (
+    top: flex-start,
+    center: center,
+    bottom: flex-end
+);
+
+@each $alignKey, $alignVal in $align {
+    @each $justifyKey, $justifyVal in $justify {
+        .dv-wgms-flex-#{$justifyKey}-#{$alignKey} {
+            display: flex;
+            align-items: #{$alignVal};
+            justify-content: #{$justifyVal};
+        }
+    }
+}
+
+.dv-body1 {
+    font-size: var(--dv-text-body1);
+    font-weight: normal;
+    line-height: var(--dv-text-body1);
+    letter-spacing: 0;
+}
+
+.dv-number1 {
+    font-family: var(--dv-font-family-number);
+    font-size: var(--dv-text-number1);
+    font-weight: normal;
+    line-height: var(--dv-text-number1);
+    letter-spacing: 0;
+}
+
+.dv-secondary {
+    color: var(--dv-color-text-secondary);
+}
+
+.dv-index {
+    color: var(--dv-color-index);
+}
+
+.dv-danger {
+    color: var(--dv-color-danger);
+}
+
+.dv-success {
+    color: var(--dv-color-success);
+}
+
+.dv-mr-2 {
+    margin-right: 2px;
+}
+
+.dv-mr-4 {
+    margin-right: 4px;
+}
+
+.dv-mr-6 {
+    margin-right: 6px;
+}
+
+.dv-mr-8 {
+    margin-right: 8px;
+}
+
+.dv-wgms-flex-bw-c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dv-wgms-mb-12 {
+    margin-bottom: 12px;
+}
+
+.dv-wgms-mb-8 {
+    margin-bottom: 8px;
+}

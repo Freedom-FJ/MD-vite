@@ -1,0 +1,93 @@
+.dv-wgms-environmental-analysis {
+    width: $bg-width;
+    height: 136px;
+
+    .dv-wgms-factor-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 16px 0 10px;
+
+        .dv-wgms-factor-top-name {
+            // margin-bottom: 12px;
+
+            @include common-font;
+        }
+    }
+
+    .dv-wgms-factor-box {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        min-height: 136px;
+        padding: 12px 0;
+
+        @include common-bg;
+    }
+
+    .dv-wgms-factor-body {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+
+        .dv-wgms-factor-body-item {
+            position: relative;
+            display: flex;
+
+            // min-width: 78px;
+            flex: 1;
+            flex-direction: column;
+            align-items: center;
+
+            .dv-wgms-fator-pie {
+                position: absolute;
+                top: 18px;
+
+                // left: -40px;
+                z-index: 1;
+
+                // width: 160px;
+                // height: 100px;
+                width: 96px;
+                height: 58px;
+            }
+
+            .dv-wgms-factor-value {
+                // margin: 6px 0 28px;
+                position: absolute;
+                top: 16px;
+                z-index: 9;
+                font-family: var(--dv-font-family-number);
+                font-size: var(--dv-text-number6);
+                font-weight: 500;
+                line-height: 30px;
+                color: var(--dv-color-index);
+                text-shadow: 0 1px 3px 0 var(--dv-text-shadow);
+            }
+
+            .dv-wgms-factor-name {
+                position: absolute;
+                bottom: 1px;
+
+                // z-index: 2;
+                width: 85px;
+                overflow: hidden;
+                text-align: center;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                @include common-font;
+            }
+        }
+    }
+
+    .dv-wgms-environmental-no-data {
+        margin: 20px auto;
+        color: white;
+
+        @include common-font;
+    }
+}

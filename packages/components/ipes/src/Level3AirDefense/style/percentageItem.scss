@@ -1,0 +1,17 @@
+.dv-ipes-percentage-wrap {
+    width: 100%;
+    height: 4px;
+    overflow: hidden;
+    background: #1b455d;
+    border-radius: 2px;
+
+    .dv-ipes-percentage-item {
+        height: 100%;
+    }
+}
+
+.dv-ipes-flex-bw-c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

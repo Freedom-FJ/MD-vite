@@ -1,0 +1,43 @@
+.dv-ipes-app-item {
+    width: 200px;
+    height: 28px;
+    cursor: pointer;
+    background: rgba(2, 176, 253, 0.1) 0 0 no-repeat;
+    border: 1px solid rgba(0, 147, 255, 0.1);
+    border-radius: 4px;
+
+    &:hover {
+        background: rgba(2, 166, 253, 0.25);
+        border: 1px solid rgba(0, 83, 119, 1);
+    }
+}
+
+.dv-ipes-app-item-active {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 137, 253, 0.2) 0%,
+            rgba(2, 137, 253, 0.4) 20%,
+            rgba(2, 147, 253, 0) 100%
+        );
+    border: 1px solid rgba(0, 128, 183, 1);
+
+    @keyframes dv-ipes-clippath {
+        0%,
+        100% {
+            clip-path: inset(0 0 95% 0);
+        }
+
+        25% {
+            clip-path: inset(0 95% 0 0);
+        }
+
+        50% {
+            clip-path: inset(95% 0 0 0);
+        }
+
+        75% {
+            clip-path: inset(0 0 0 95%);
+        }
+    }
+}

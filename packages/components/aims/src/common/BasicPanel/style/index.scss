@@ -1,0 +1,11 @@
+.dv-aims-basic-panel {
+    &-container {
+        position: absolute;
+        z-index: 10;
+        box-sizing: content-box;
+    }
+
+    &-scroll-container {
+        padding: 10px;
+    }
+}

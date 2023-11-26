@@ -1,0 +1,90 @@
+.dv-wgms-water-quality {
+    width: $bg-width;
+    min-height: 168px;
+
+    .dv-wgms-top-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 88px;
+    }
+
+    .dv-wgms-left-box {
+        width: 64px;
+        color: var(--dv-color-text-primary);
+
+        .left-title {
+            margin-bottom: 4px;
+            font-size: var(--dv-text-headline2);
+            line-height: var(--dv-text-headline2);
+            text-align: center;
+        }
+
+        .dv-wgms-water-bg {
+            display: inline-block;
+            width: 100%;
+            height: 55px;
+            text-align: center;
+            background: url(./images/water-bg-new.png);
+            background-size: 100% 100%;
+
+            span {
+                font-family: Oswald;
+                font-size: var(--dv-text-number6);
+                font-weight: normal;
+                line-height: var(--dv-text-number6);
+                color: var(--dv-color-index);
+                text-shadow: 0 2px 4px 0 var(--dv-text-shadow);
+            }
+        }
+    }
+
+    .dv-wgms-right-box {
+        width: 296px;
+        height: 56px;
+
+        .dv-wgms-top-text {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+    }
+
+    .dv-wgms-item {
+        box-sizing: border-box;
+        width: 182px;
+        height: 40px;
+        padding: 0 12px;
+        background: var(--dv-color-fill-base);
+        border: 1px solid var(--dv-color-border-base);
+        border-radius: 4px;
+    }
+
+    .dv-wgms-mb-8px {
+        margin-bottom: 8px;
+    }
+
+    .dv-wgms-flex-bw-c {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .dv-wgms-mb-12px {
+        margin-bottom: 12px;
+    }
+
+    .dv-wgms-mt--4 {
+        margin-top: -4px;
+    }
+
+    .right-value {
+        display: flex;
+        align-items: center;
+    }
+
+    .up-num {
+        color: var(--dv-color-success);
+    }
+}

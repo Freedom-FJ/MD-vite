@@ -1,0 +1,7 @@
+**.d.ts
+/packages/remote/packages
+dist
+lib
+es
+node_modules
+**.md

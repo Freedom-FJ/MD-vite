@@ -1,0 +1,11 @@
+{
+  "name": "@data-visual/drag-screen",
+  "private": true,
+  "version": "1.2.15",
+  "scripts": {
+    "dev": "vite --port 5999 --strictPort",
+    "serve": "vite preview --port 5999 --strictPort",
+    "build": "vite build",
+    "clean": "rm -rf dist"
+  }
+}

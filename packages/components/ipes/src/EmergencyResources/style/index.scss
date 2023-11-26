@@ -1,0 +1,61 @@
+.dv-ipes-emergency-resources {
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .flex-c {
+        justify-content: center;
+    }
+
+    .flex-s {
+        justify-content: flex-start;
+    }
+
+    .list-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        .list {
+            width: 144px;
+            height: 64px;
+            margin-top: 8px;
+            background: var(--dv-color-fill-base);
+            border: 1px solid var(--dv-color-border-base);
+            border-radius: 3px;
+
+            .avatar {
+                width: 40px;
+                height: 40px;
+                margin-left: 12px;
+            }
+
+            .detail {
+                margin-left: 16px;
+
+                .label {
+                    font-family: var(--font-family-text);
+                    font-size: var(--dv-text-headline2);
+                }
+
+                .value {
+                    span {
+                        &:nth-child(1) {
+                            font-family: var(--dv-font-family-number);
+                            font-size: var(--dv-text-headline1);
+                            color: var(--dv-color-index);
+                        }
+
+                        &:nth-child(2) {
+                            font-family: var(--font-family-text);
+                            font-size: var(--dv-text-body1);
+                            color: var(--dv-color-text-secondary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

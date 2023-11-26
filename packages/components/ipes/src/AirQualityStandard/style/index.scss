@@ -1,0 +1,149 @@
+.dv-ipes-airQuality-management {
+    @keyframes radio-scale-animation {
+        from {
+            opacity: 0.5;
+            transform: translateX(-50%) scale(0.95);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(-50%) scale(1.05);
+        }
+    }
+
+    @keyframes radio-line-animation {
+        from {
+            opacity: 0.5;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .mainBox {
+        box-sizing: border-box;
+        height: 144px;
+        padding: 12px;
+        margin-top: 16px;
+        background-color: var(--dv-color-fill-base);
+        border: 1px solid var(--dv-color-border-base);
+        border-radius: 4px;
+
+        .title {
+            font-size: 14px;
+        }
+
+        .main-container {
+            display: flex;
+            flex-wrap: nowrap;
+            height: 88px;
+            margin-top: 16px;
+
+            .main-left {
+                position: relative;
+                width: 144px;
+            }
+
+            .kqzhChart {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                z-index: 3;
+                width: 66px;
+                height: 38px;
+                transform: translateX(-50%);
+            }
+
+            .img_one {
+                position: absolute;
+                top: 2px;
+                left: 50%;
+                display: block;
+                height: 40px;
+                transform: translateX(-50%);
+                animation: radio-line-animation 0.9s linear 0.2s infinite alternate;
+            }
+
+            .img_two {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                z-index: -4;
+                display: block;
+                height: 44px;
+                transform: translateX(-50%);
+                animation: radio-scale-animation 0.9s linear 0.2s infinite alternate;
+            }
+        }
+
+        .legendBox {
+            position: absolute;
+            top: 52px;
+            left: 50%;
+            display: flex;
+            flex-direction: column;
+            width: 88px;
+            font-size: 14px;
+            line-height: 1;
+            transform: translateX(-50%);
+
+            .item {
+                display: flex;
+                justify-content: space-between;
+
+                + .item {
+                    margin-top: 8px;
+                }
+            }
+        }
+
+        .tableList {
+            box-sizing: border-box;
+            flex: 1;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 4px;
+
+            .title-box {
+                display: flex;
+                justify-content: center;
+                height: 28px;
+                font-size: 14px;
+                line-height: 28px;
+                background: var(--dv-color-fill-light);
+            }
+
+            .main {
+                height: 60px;
+                background-color: var(--dv-color-fill-base);
+
+                .list {
+                    display: flex;
+                    justify-content: center;
+                    height: 30px;
+                    line-height: 30px;
+                }
+            }
+
+            .th {
+                flex: 1;
+                color: var(--dv-color-text-secondary);
+            }
+
+            .tr {
+                flex: 1;
+                font-size: 16px;
+
+                .value1 {
+                    padding-right: 4px;
+                    color: #0eed95;
+                }
+
+                .value2 {
+                    color: var(--dv-color-text-secondary);
+                }
+            }
+        }
+    }
+}

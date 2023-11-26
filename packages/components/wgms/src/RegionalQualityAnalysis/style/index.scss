@@ -1,0 +1,16 @@
+.dv-wgms-regional-quality-analysis {
+    width: $bg-width;
+    min-height: 168px;
+
+    .up-num {
+        color: var(--dv-color-success);
+    }
+
+    .down-num {
+        color: var(--dv-color-danger);
+    }
+
+    .same-num {
+        color: var(--dv-color-index);
+    }
+}

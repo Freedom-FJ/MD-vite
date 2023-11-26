@@ -1,0 +1,17 @@
+{
+  "name": "@data-visual/remote",
+  "private": true,
+  "version": "1.2.15",
+  "scripts": {
+    "dev": "vite --port 5000 --strictPort",
+    "serve": "vite preview --port 5000 --strictPort",
+    "build": "vite build && gulp -f ./scripts/index.ts",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@data-visual/aims": "workspace:^1.2.15",
+    "@data-visual/bmp": "workspace:^1.2.15",
+    "@data-visual/ipes": "workspace:^1.2.15",
+    "@data-visual/wgms": "workspace:^1.2.15"
+  }
+}

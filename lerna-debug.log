@@ -1,0 +1,13 @@
+113 error Error: Command failed with exit code 1: git commit -m chore(release): publish
+113 error
+113 error > data-visual@1.0.0 lint:staged
+113 error > lint-staged -c ./.husky/lintstagedrc.js --allow-empty
+113 error
+113 error /var/folders/gk/6qyd49tx3x3cqc4jlcy8y3q00000gn/T/lintstaged-0305fbe8.sh: line 1: lint-staged: command not found
+113 error husky - pre-commit hook exited with code 127 (error)
+113 error     at makeError (/Users/majiahui/persional/project/data-visual/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
+113 error     at handlePromise (/Users/majiahui/persional/project/data-visual/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
+113 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+113 error     at async VersionCommand.gitCommitAndTagVersion (/Users/majiahui/persional/project/data-visual/node_modules/.pnpm/lerna@7.1.4/node_modules/lerna/dist/index.js:8368:11)
+113 error     at async VersionCommand.commitAndTagUpdates (/Users/majiahui/persional/project/data-visual/node_modules/.pnpm/lerna@7.1.4/node_modules/lerna/dist/index.js:8340:18)
+113 error     at async Promise.all (index 0)

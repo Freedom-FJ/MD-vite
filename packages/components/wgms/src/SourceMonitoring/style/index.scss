@@ -1,0 +1,63 @@
+.dv-wgms-source-monitor {
+    &-list {
+        &-item {
+            padding: 10px 20px 8px 8px;
+            background: var(--dv-color-fill-base);
+            border: 1px solid var(--dv-color-border-base);
+            border-radius: 4px;
+
+            &:first-child {
+                margin-right: 12px;
+            }
+
+            .title {
+                margin-bottom: 8px;
+                font-size: var(--dv-text-headline2);
+                font-weight: 500;
+                color: var(--dv-color-text-primary);
+                text-align: center;
+            }
+
+            .content-box {
+                img {
+                    padding-top: 8px;
+                    margin-right: 8px;
+                }
+
+                .right {
+                    .online {
+                        font-family: var(--dv-font-family-number);
+                        font-size: var(--dv-text-number5);
+                        color: var(--dv-color-index);
+                    }
+
+                    .split {
+                        margin: 0 4px;
+                        font-family: var(--dv-font-family-number);
+                        font-size: 14px;
+                        color: --dv-color-text-primary;
+                    }
+
+                    .total {
+                        margin-right: 4px;
+                        font-family: var(--dv-font-family-number);
+                        font-size: 14px;
+                        color: --dv-color-text-primary;
+                    }
+
+                    .unit {
+                        font-size: var(--dv-text-body2);
+                        color: var(--dv-color-text-secondary);
+                    }
+
+                    .rate {
+                        margin: 0 4px;
+                        font-family: var(--dv-font-family-number);
+                        font-size: 12px;
+                        color: var(--dv-color-index);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,274 @@
+.light {
+    .dv-ipes-water-network {
+        --image-water-lakage: url("./images/water-lakage.light.png");
+        --image-water-panel: url("./images/water-panel.light.png");
+        --image-water-total: url("./images/water-total.light.png");
+    }
+}
+
+.dark {
+    .dv-ipes-water-network {
+        --image-water-lakage: url("./images/water-lakage.png");
+        --image-water-panel: url("./images/water-panel.png");
+        --image-water-total: url("./images/water-total.png");
+    }
+}
+
+.dv-ipes-water-network {
+    box-sizing: border-box;
+
+    .sealing-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+
+        .module-icon {
+            width: 14px;
+            height: 14px;
+            margin-right: 4px;
+        }
+
+        &__title {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            line-height: 14px;
+            color: var(--dv-color-text-primary);
+        }
+
+        &__title--sub {
+            font-family: var(--dv-font-family-number);
+            font-size: var(--dv-text-number1);
+            color: var(--dv-color-text-secondary);
+        }
+    }
+
+    // 面板
+    @mixin panel() {
+        box-sizing: border-box;
+        padding: 8px 12px;
+        background: var(--dv-color-fill-base);
+        border: 1px solid var(--dv-color-border-base);
+        border-radius: 3px;
+    }
+
+    .water-device {
+        font-family: var(--font-family-text);
+
+        .water-device__info {
+            margin: 8px 0 12px;
+
+            @include panel;
+        }
+
+        .water-device__percent {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+
+            .value {
+                font-family: var(--dv-font-family-number);
+                color: var(--dv-color-index);
+            }
+        }
+
+        .water-device__progress {
+            margin: 12px 0;
+        }
+
+        .water-device__detail {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+            color: var(--dv-color-text-secondary);
+
+            .left {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+
+            .title {
+                display: flex;
+                align-items: center;
+                margin-right: 8px;
+            }
+
+            .percent,
+            .value {
+                font-family: var(--dv-font-family-number);
+            }
+
+            .icon {
+                width: 16px * 1;
+                height: 16px * 1;
+            }
+
+            .right {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+        }
+
+        .space {
+            margin: 0 4px;
+            font-size: 14px;
+            color: var(--dv-color-text-secondary);
+        }
+    }
+
+    .water-statistics {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 16px;
+        font-family: var(--font-family-text);
+
+        .water-statistics__number {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 144px;
+
+            .water-statistics-panel {
+                // border: 1px solid #146ba8;
+                // box-shadow: inset 0px 0px 10px 0px rgba(0, 166, 255, 0.5);
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                width: 170px;
+                height: 68px;
+                padding: 12px 8px 12px 20px;
+                margin-bottom: 8px;
+                background: var(--image-water-panel) no-repeat center;
+                background-size: 100%;
+
+                .icon {
+                    width: 30px;
+                    margin-right: 20px;
+                    margin-left: 12px;
+                }
+
+                .title {
+                    font-size: 14px;
+                }
+
+                .value {
+                    font-family: var(--dv-font-family-number);
+                    font-size: 16px;
+                    color: var(--dv-color-index);
+                }
+
+                .unit {
+                    margin-left: 4px;
+                    font-size: 14px;
+                    color: var(--dv-color-text-secondary);
+                }
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+            }
+
+            .water-leakage {
+                width: 28px;
+                height: 40px;
+                background: var(--image-water-lakage) no-repeat center;
+                background-size: 100%;
+            }
+
+            .water-total {
+                width: 33px;
+                height: 39px;
+                background: var(--image-water-total) no-repeat center;
+                background-size: 100%;
+            }
+        }
+
+        .water-statistics__percent {
+            height: 144px;
+            padding: 0 8px;
+            background: url("./images/water-panel-percent.png") no-repeat center -12px;
+            background-size: 100% 100%;
+
+            .title {
+                position: relative;
+                font-size: 14px;
+                color: var(--dv-text-headline2);
+                text-align: center;
+                text-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+
+                &::before {
+                    position: absolute;
+                    top: 9px;
+                    left: 0;
+                    width: 46px;
+                    height: 1px;
+                    content: "";
+                    background: var(--dv-color-border-base);
+                }
+
+                &::after {
+                    position: absolute;
+                    top: 9px;
+                    right: 0;
+                    width: 46px;
+                    height: 1px;
+                    content: "";
+                    background: var(--dv-color-border-base);
+                }
+            }
+
+            .content {
+                box-sizing: border-box;
+                width: 160px;
+                margin-bottom: 40px;
+                font-family: var(--dv-font-family-number);
+                font-size: 28px;
+                font-weight: normal;
+                color: var(--dv-color-index);
+                text-align: center;
+            }
+
+            .online-data {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 9px 12px;
+                background: var(--dv-color-fill-base);
+                border: 1px solid var(--dv-color-border-base);
+                border-radius: 4px;
+
+                .label {
+                    font-size: 14px;
+                    color: var(--dv-color-text-primary);
+                }
+
+                .value {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .online {
+        color: var(--dv-color-success);
+    }
+
+    .space {
+        margin: 0 2px;
+        color: var(--dv-color-text-placeholder);
+    }
+
+    .offline {
+        color: var(--dv-color-danger);
+    }
+}
